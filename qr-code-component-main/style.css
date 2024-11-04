@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ /* outfit-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/outfit-v11-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  /* outfit-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/outfit-v11-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+body {
+   font-family: Outfit;
+   background-color: hsl(212,45%,89%);
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+
+.qr-code-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    gap: 24px;
+    max-width: 320px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 16px 16px 40px 16px;
+    border-radius: 20px;
+
+    /* box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 4.77); */
+}
+
+img {
+    max-width: 288px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 22px;
+    line-height: 140%;
+    color: hsl(218, 44%, 22%);
+    font-weight: 700;
+}
+
+p {
+    font-size: 15px;
+    color: hsl(216, 15%, 48%);
+    line-height: 140%;
+    letter-spacing: 1.2px;
+}
