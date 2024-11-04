@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* inter-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/inter-v18-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  /* inter-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./assets/fonts/inter-v18-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  /* inter-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./assets/fonts/inter-v18-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+p {
+    font-size: 14px;
+}
+
+:root {
+--Green: hsl(75, 94%, 57%);
+--White: hsl(0, 0%, 100%);
+--Grey-700: hsl(0, 0%, 20%);
+--Grey-800: hsl(0, 0%, 12%);
+--Grey-900: hsl(0, 0%, 8%);
+}
+
+
+body {
+    background-color: var(--Grey-900);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Inter';
+    font-weight: 400;
+}
+
+.link-tree {
+    background-color: var(--Grey-800);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 310px;
+    gap: 24px;
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar {
+    width: 64px;
+    border-radius: 50%;
+}
+
+.name {
+    color: var(--White);
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 18px;
+    margin-bottom: 4px;
+}
+
+.location {
+    color: var(--Green);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+q {
+    font-size: 14px;
+    color: #bcbcbc;
+    margin-top: 10px
+
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    width: 100%;
+}
+
+nav a {
+    color: var(--White);
+    background-color: var(--Grey-700);
+    width: 100%;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 8px;
+
+}
+
+@media (pointer: fine) {    
+    
+    nav a:hover {
+        color: var(--Grey-900);
+        background-color: var(--Green);
+    
+    }
+}
