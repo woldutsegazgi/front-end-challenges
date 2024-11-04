@@ -10,8 +10,8 @@ This is my solution for the [Frontend Mentor QR Code Component Challenge](https:
 ### Links
 
 
-- [Solution URL](https://github.com/woldutsegazgi/front-end-challenges/blob/master/blog-prview-card)
-- [Live Site URL](https://woldutsegazgi.github.io/front-end-challenges/blog-prview-card)
+- [Solution URL](https://github.com/woldutsegazgi/front-end-challenges/tree/master/blog-preview-card)
+- [Live Site URL](https://woldutsegazgi.github.io/front-end-challenges/blog-preview-card)
 
 ## Author
 
